@@ -16,14 +16,9 @@ export async function newfun(){
         }
     }
         );
-<<<<<<< Updated upstream
         // console.log(authenticatemethod);
     
     
-=======
-        console.log(authenticatemethod);
-
->>>>>>> Stashed changes
     const lmethod:string | any = await vscode.window.showQuickPick(
         authenticatemethod,{
             matchOnDetail:true
