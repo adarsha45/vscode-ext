@@ -22,7 +22,7 @@ export async function jwtauth() {
     } catch (error) {
         console.log(`ERROR: ${error}`)
     }
-}
+
 parsedJsonData.members.forEach( member => {
     parsedJsonData.members.push(member)
 })
@@ -35,4 +35,6 @@ try {
 	fs.writeFileSync('d:/vscode-ext/json/ada.json', frameworksData, 'utf-8')
 } catch (error) {
 	console.log(`WRITE ERROR: ${error}`)
+}
+ 
 }
