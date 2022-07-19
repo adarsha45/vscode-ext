@@ -16,14 +16,9 @@ export async function newfun(){
         }
     }
         );
-<<<<<<< Updated upstream
         // console.log(authenticatemethod);
     
     
-=======
-        console.log(authenticatemethod);
-
->>>>>>> Stashed changes
     const lmethod:string | any = await vscode.window.showQuickPick(
         authenticatemethod,{
             matchOnDetail:true
@@ -35,7 +30,6 @@ export async function newfun(){
         CODE = await vscode.window.showInputBox({
             placeHolder: 'Plese!! Enter Your Email',
                      });
-<<<<<<< Updated upstream
         //   console.log(CODE);
                    
     }
@@ -43,13 +37,3 @@ export async function newfun(){
  }
 
  console.log(jsonss.squadName);
-=======
-                    }
-
-                    apidatas.forEach(apid => {apid.SF_CONSUMER_KEY = CODE;console.log(apid.SF_CONSUMER_KEY);});
-
-
-                  
-
-                }
->>>>>>> Stashed changes
