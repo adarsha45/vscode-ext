@@ -20,16 +20,26 @@ export async function newfun(){
             matchOnDetail:true
       }
       );
-
+      let CODE:any;
       if(lmethod.label === 'JWT authenticate'){
         vscode.window.showWarningMessage('JWT Authenticatication Enabled');
-        const CODE:any = await vscode.window.showInputBox({
+        CODE = await vscode.window.showInputBox({
             placeHolder: 'Plese!! Enter Your Email',
                      });
         //   console.log(CODE);
                    
     }
-               
+    const mode = require('../json/ada.json');
+    const datas = mode.members;
+    datas.foreach(data=>
+        {
+        data.email = CODE;
+        console.log(data.email);
+    });
+    
+  
+
+    
  }
 
  console.log(jsonss.squadName);
