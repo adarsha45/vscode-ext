@@ -16,8 +16,14 @@ export async function newfun(){
         }
     }
         );
+<<<<<<< HEAD
         console.log(authenticatemethod);
 
+=======
+        // console.log(authenticatemethod);
+    
+    
+>>>>>>> 0bc19531ca36f24f655757572338a2f9b3d2f77b
     const lmethod:string | any = await vscode.window.showQuickPick(
         authenticatemethod,{
             matchOnDetail:true
