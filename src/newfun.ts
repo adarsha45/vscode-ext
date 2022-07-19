@@ -4,7 +4,7 @@ import * as vscode from 'vscode';
 import * as jsonss from "../json/ada.json";
 let methods = jsonss.athenticatemethod;
 export async function newfun(){
-    console.log(methods);
+    // console.log(methods);
     let authenticatemethod = methods.map( json => {
         return {
             label:json.name,
@@ -12,7 +12,7 @@ export async function newfun(){
         }
     }
         );
-        console.log(authenticatemethod);
+        // console.log(authenticatemethod);
     
     
     const lmethod:string | any = await vscode.window.showQuickPick(
@@ -26,6 +26,8 @@ export async function newfun(){
         const CODE:any = await vscode.window.showInputBox({
             placeHolder: 'Plese!! Enter Your Email',
                      });
-          console.log(CODE);
-                    }
-                }
+        //   console.log(CODE);
+                   
+    }
+               
+ }
