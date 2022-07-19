@@ -1,0 +1,12 @@
+{
+    "jwt_authenticate":"authenticate using jwt",
+    "credentials":[
+        {
+    "SF_CONSUMER_KEY":"",
+    "SF_USERNAME":"dadad",
+    "setdefaultdevhubusername":"",
+    "SF_INSTANCE_URL":""
+}]
+
+
+}
