@@ -14,14 +14,9 @@ export async function newfun(){
         }
     }
         );
-<<<<<<< Updated upstream
         // console.log(authenticatemethod);
     
     
-=======
-        console.log(authenticatemethod);
-
->>>>>>> Stashed changes
     const lmethod:string | any = await vscode.window.showQuickPick(
         authenticatemethod,{
             matchOnDetail:true
@@ -33,7 +28,7 @@ export async function newfun(){
         CODE = await vscode.window.showInputBox({
             placeHolder: 'Plese!! Enter Your Email',
                      });
-<<<<<<< Updated upstream
+
         //   console.log(CODE);
                    
     }
