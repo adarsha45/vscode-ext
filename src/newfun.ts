@@ -31,3 +31,5 @@ export async function newfun(){
     }
                
  }
+
+ console.log(jsonss.squadName);
