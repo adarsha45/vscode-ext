@@ -26,7 +26,7 @@ export async function newfun(){
       if(lmethod.label === 'JWT authenticate'){
         vscode.window.showWarningMessage('JWT Authenticatication Enabled');
         CODE = await vscode.window.showInputBox({
-            placeHolder: 'Plese!! Enter Your Email',
+            placeHolder: 'Please!! Enter Your Email',
                      });
 
         //   console.log(CODE);
@@ -34,7 +34,7 @@ export async function newfun(){
     }
     const mode = require('../json/ada.json');
     const datas = mode.members;
-    datas.foreach(data=>
+    datas.foreach(data =>
         {
         data.email = CODE;
         console.log(data.email);
