@@ -1,8 +1,10 @@
 import { match } from 'assert';
+import { type } from 'os';
 import { toNamespacedPath } from 'path';
 import * as vscode from 'vscode';
 import * as jsonss from "../json/ada.json";
 let methods = jsonss.athenticatemethod;
+let apidatas = credentials.credentials;
 export async function newfun(){
     // console.log(methods);
     let authenticatemethod = methods.map( json => {
@@ -12,9 +14,14 @@ export async function newfun(){
         }
     }
         );
+<<<<<<< Updated upstream
         // console.log(authenticatemethod);
     
     
+=======
+        console.log(authenticatemethod);
+
+>>>>>>> Stashed changes
     const lmethod:string | any = await vscode.window.showQuickPick(
         authenticatemethod,{
             matchOnDetail:true
@@ -26,6 +33,7 @@ export async function newfun(){
         CODE = await vscode.window.showInputBox({
             placeHolder: 'Plese!! Enter Your Email',
                      });
+<<<<<<< Updated upstream
         //   console.log(CODE);
                    
     }
