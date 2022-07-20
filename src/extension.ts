@@ -28,7 +28,7 @@ export function activate(context: vscode.ExtensionContext) {
 		exec(`sfdx auth:web:login -a testorg`, (error, stdout, stderr) => {
 		
 			if(stdout !== null ){
-				exe
+				
                    vscode.window.showInformationMessage(stdout);
 			}
 			console.log("stderr: " + stderr);
