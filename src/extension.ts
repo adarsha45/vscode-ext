@@ -26,8 +26,9 @@ export function activate(context: vscode.ExtensionContext) {
 		let frc = "force";
 		const {exec} = require("child_process");
 		exec(`sfdx auth:web:login -a testorg`, (error, stdout, stderr) => {
-			console.log("stdout: " + stdout);
+		
 			if(stdout !== null ){
+				exe
                    vscode.window.showInformationMessage(stdout);
 			}
 			console.log("stderr: " + stderr);

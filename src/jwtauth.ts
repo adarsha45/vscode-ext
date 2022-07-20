@@ -12,9 +12,13 @@ export async function jwtauth() {
         const data = fs.readFileSync('d:/vscode-ext/json/ada.json', 'utf8')
         const jsonData = JSON.parse(data)
         parsedJsonData = jsonData
+        if (JSON.stringify(parsedJsonData) === '{}'){
+            console.log("Empty json");
+        }
     
         // Check the keys that jsonData has
         console.log(Object.keys(jsonData))
+        console.log(parsedJsonData.squadName);
         
         jsonData.members.forEach(member => {
             console.log(`Framework: ${member}`)
@@ -23,18 +27,4 @@ export async function jwtauth() {
         console.log(`ERROR: ${error}`)
     }
 
-parsedJsonData.members.forEach( member => {
-    parsedJsonData.members.push(member)
-})
-
-
-
-
-try {
-	const frameworksData = JSON.stringify(parsedJsonData)
-	fs.writeFileSync('d:/vscode-ext/json/ada.json', frameworksData, 'utf-8')
-} catch (error) {
-	console.log(`WRITE ERROR: ${error}`)
-}
- 
 }
