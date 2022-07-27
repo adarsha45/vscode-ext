@@ -1,8 +1,8 @@
 {
-  "name": "first-ext",
+  "name": "vscode-ext",
   "displayName": "first ext",
   "description": "my first extension",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "CQDevops",
   "repository": "https://github.com/adarsha45/vscode-ext",
   "engines": {
